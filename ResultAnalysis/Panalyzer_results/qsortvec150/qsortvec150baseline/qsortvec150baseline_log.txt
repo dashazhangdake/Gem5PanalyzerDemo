@@ -1,0 +1,3 @@
+73830011
+threads:  6  ;samples:  6000
+Time has passed:  2505.8812725999996 seconds

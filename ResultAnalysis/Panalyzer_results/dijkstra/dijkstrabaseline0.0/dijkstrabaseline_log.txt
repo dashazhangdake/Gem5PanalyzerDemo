@@ -1,0 +1,4 @@
+43408783
+
+threads:  6  ;samples:  6000
+Time has passed:  912.7287173999999 seconds
