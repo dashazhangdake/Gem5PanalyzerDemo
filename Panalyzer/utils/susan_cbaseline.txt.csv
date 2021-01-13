@@ -1,0 +1,93 @@
+"movz   x29, #0, #0"
+"orr   x5, xzr, x0"
+"ldr   x1, [sp]"
+"add   x2, sp, #8"
+"movk   x0, #0, #32"
+bl   <__libc_start_main>
+"adrp   x7, #352256"
+"str   x1, [x29, #108]"
+"cbz   x0, <__libc_start_main+72>"
+"cbnz   x1, <__libc_start_main+112>"
+"subs   x1, #15"
+b.eq   <_dl_aux_init+608>
+b.hi   <_dl_aux_init+476>
+b.cc   <_dl_aux_init+660>
+b   <_dl_aux_init+592>
+b.ne   <_dl_aux_init+220>
+"movn   w2, #0, #0"
+"csel   x17, x17, x1, eq"
+"csinc   w6, w6, wzr, eq"
+"eor   w3, w3, w1"
+ret
+"ccmp   x0, #0, #4, eq"
+"ubfm   x3, x0, #61, #60"
+"sub   x3, x3, x0"
+"ldrb   w0, [w0, #40]"
+"ands   w3, w0"
+"and   x23, x4, x3"
+"tbz   w23, #0x800, <__libc_start_main+280>"
+"mrs   x0, dczid_el0"
+"tbnz   w0, #0x10, <__libc_start_main+316>"
+"lslv   w0, w1, w0"
+blr   x1
+b.cs   <__libc_setup_tls+188>
+"udiv   x20, x20, x26"
+"madd   x20, xzr, x20, x26"
+b.le   <sbrk+168>
+br   x17
+"prfm   PLDL1KEEP, [x1]"
+b.ls   <__memcpy_generic+80>
+"msr   tpidr_el0, x24"
+"adds   x0, #4095"
+b.gt   <__libc_start_main+424>
+"strh   w3, [w1, #696]"
+"bics   x4, x4, x5"
+"bic   x5, x6, x7"
+"rev   x4, x4"
+"clz   x4, x4"
+"sbfm   x24, x1, #0, #31"
+nop
+"ldaxr   x1, xzr, [x19]"
+"stxr   x0, x2, [x19]"
+"ldxr   x0, xzr, [x19]"
+"stlxr   x1, x2, [x19]"
+"dup   w0, w1"
+"dc zva   , x3"
+"ldur   x0, [x0, #-8]"
+"ldurb   w7, [w4, #-1]"
+"strb   w6, [w0]"
+"sturb   w7, [w5, #-1]"
+"stur   x2, [x1, #-8]"
+"umulh   x3, x3, x20"
+"cmeq   w3, w1"
+"addp   w3, w3, w4"
+"umov   w10, w3, #0"
+"lsrv   x5, x8, x3"
+"rbit   x6, x6"
+b.lt   <_IO_getline_info+276>
+"fmov   f8, #1082130432"
+"scvtf   f8, f21"
+"fdiv   f0, f0, f8"
+"fmul   f0, f0, f0"
+"fnmul   f0, f0, f1"
+"fcvt   f0, f0"
+"fcmpe   f0, #0"
+"fabs   f2, f0"
+"fcmp   f2, f1"
+"fcvtZu   f0, f0"
+"fmadd   f1, f1, f0, f2"
+"fsub   f2, f1, f2"
+"fmsub   f5, f5, f2, f0"
+"fadd   f1, f4, f5"
+b.pl   <__exp_finite+824>
+"bfm   x1, x0, #32, #31"
+b.ge   <susan_corners+1984>
+"csneg   w3, w0, w0, ge"
+b.mi   <susan_corners+3332>
+"fcvtZs   f4, f1"
+"sdiv   w1, w1, w30"
+"smaddl   x5, x26, x8, x9"
+"ldrsw   x3, [x29, #104]"
+"msub   x23, x22, x23, x0"
+"ldrh   w0, [w19, #128]"
+"csinv   w0, wzr, wzr, eq"
