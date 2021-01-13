@@ -1,2 +1,2 @@
 # Gem5PanalyzerDemo
-PVF Panalyzer for demo purposes
+Cleaned PVF Panalyzer for demo
